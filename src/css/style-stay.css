@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    max-width: 1440px;
+    min-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Slate-Grey);
+}
+
+.main-stay {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--White);
+    padding: 24px 24px 24px 64px;
+    border-radius: 35px;
+}
+
+.section-stay {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.h1 {
+    font-size: 56px;
+    padding: 67px 95px 19px 0;
+}
+
+.p-stay {
+    max-width: 400px;
+    line-height: 24px;
+}
+
+.div-info-main {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 25px;
+}
+
+.div-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.img-info {
+    width: 21px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 44px;
+}
+
+.label-input {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn {
+    max-width: 376px;
+    height: 56px;
+    border-radius: 10px;
+    cursor: url(https://github.com/HumbertoFox/repository/assets/126817628/ef5feb7b-75d4-47ee-a596-7be253492ebd), auto;
+}
+
+.input-email {
+    font-size: 16px;
+    padding-left: 23px;
+    border: 1px solid var(--Grey);
+    transition: .3s ease-in-out;
+}
+
+.input-email:hover,
+.input-email:focus {
+    border: 1px solid var(--Dark-Slate-Grey);
+}
+
+.input-email::placeholder {
+    color: var(--Grey);
+}
+
+.btn-stay,
+.btn-thanks {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--White);
+    background-color: var(--Dark-Slate-Grey);
+    padding-top: 4px;
+    margin-top: 14px;
+}
+
+.btn-stay:hover,
+.btn-thanks:hover {
+    background: linear-gradient(to right, rgb(255, 84, 116), rgb(255, 103, 63));
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 768px) {
+    body {
+        min-width: 375px;
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .main-stay {
+        width: 375px;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .section-stay {
+        padding-left: 24px;
+        padding-bottom: 39px;
+    }
+
+    .h1 {
+        font-size: 40px;
+        padding: 32px 95px 20px 0px;
+    }
+    
+    .div-info-main {
+        gap: 10px;
+        margin-top: 24px;
+    }
+
+    .div-info {
+        align-items: flex-start;
+        gap: 16px;
+        line-height: 24px;
+        padding-right: 10px;
+    }
+
+    .img-info {
+        margin-top: 1px;
+    }
+
+    .form {
+        margin-top: 42px;
+    }
+
+    .btn {
+        max-width: 328px;
+    }
+
+    .btn-stay {
+        padding-top: 1px;
+    }
+}

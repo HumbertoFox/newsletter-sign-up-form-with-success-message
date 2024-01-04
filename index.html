@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style-stay.css">
+  <link rel="stylesheet" href="./src/css/style-thanks.css">
+</head>
+<body>
+  <main class="main-stay">
+    <section class="section-stay">
+      <h1 class="h1">
+        Stay updated!
+      </h1>
+      <p class="p-stay">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <div class="div-info-main">
+        <div class="div-info-0 div-info">
+          <img class="img-info" src="./src/assets/images/icon-success.svg" alt="icon success">
+          <p>
+            Product discovery and building what matters
+          </p>
+        </div>
+        <div class="div-info-1 div-info">
+          <img class="img-info" src="./src/assets/images/icon-success.svg" alt="icon success">
+          <p>
+            Measuring to ensure updates are a success
+          </p>
+        </div>
+        <div class="div-info-2 div-info">
+          <img class="img-info" src="./src/assets/images/icon-success.svg" alt="icon success">
+          <p>
+            And much more!
+          </p>
+        </div>
+      </div>
+      <form class="form" action="#thanks">
+        <label class="label-input" for="input-email">Email address</label>
+        <input class="input-email btn" type="email" name="input-email" id="input-email" placeholder="email@company.com">
+        <button class="btn-stay btn" type="submit">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </section>
+    <picture class="picture">
+      <source media="(max-width: 768px)" srcset="./src/assets/images/illustration-sign-up-mobile.svg">
+      <img class="img-sign" src="./src/assets/images/illustration-sign-up-desktop.svg" alt="image Ilustration sign up">
+    </picture>
+  </main>
+  <main class="main-thanks" id="thanks">
+    <img class="img-thanks" src="./src/assets/images/icon-success.svg" alt="icon success">
+    <h2 class="h2">
+      Thanks for subscribing!
+    </h2>
+    <p class="p-thanks">
+      A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="btn-thanks btn">
+      Dismiss message
+    </button>
+  </main>
+  <div class="attribution" role="application">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/humberto-ribeiro-sales/" target="_blank">Humberto Ribeiro</a>.
+  </div>
+</body>
+</html>
