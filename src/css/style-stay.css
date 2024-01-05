@@ -11,6 +11,7 @@
 
 :root {
     --Tomato: hsl(4, 100%, 67%);
+    --Tomato-Error: hsla(4, 100%, 67%, .2);
     --Dark-Slate-Grey: hsl(234, 29%, 20%);
     --Charcoal-Grey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
@@ -43,7 +44,7 @@ body {
 
 .h1 {
     font-size: 56px;
-    padding: 67px 95px 19px 0;
+    padding: 68px 95px 19px 0;
 }
 
 .p-stay {
@@ -75,9 +76,22 @@ body {
     margin-top: 44px;
 }
 
-.label-input {
-    font-size: 12px;
+.div-label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-input,
+.error-message {
+    font-size: 11px;
     font-weight: bold;
+    letter-spacing: .5px;
+}
+
+.error-message {
+    color: var(--Tomato);
+    letter-spacing: .2px;
+    padding-right: 66px;
 }
 
 .btn {
@@ -99,6 +113,12 @@ body {
     border: 1px solid var(--Dark-Slate-Grey);
 }
 
+.input-email.error {
+    border: 1px solid var(--Tomato);
+    color: var(--Tomato);
+    background-color: var(--Tomato-Error);
+}
+
 .input-email::placeholder {
     color: var(--Grey);
 }
@@ -116,6 +136,7 @@ body {
 .btn-stay:hover,
 .btn-thanks:hover {
     background: linear-gradient(to right, rgb(255, 84, 116), rgb(255, 103, 63));
+    box-shadow: 0 10px 40px var(--Tomato);
 }
 
 .attribution {
@@ -171,6 +192,10 @@ body {
 
     .form {
         margin-top: 42px;
+    }
+
+    .error-message {
+        padding-right: 24px;
     }
 
     .btn {
