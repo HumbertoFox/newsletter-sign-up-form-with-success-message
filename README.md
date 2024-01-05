@@ -32,7 +32,6 @@ Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codif
 
 Mais uma prática com o HTML, CSS e Js! show 😎
 
-Solução responsive no HTML
 ```html
       <form class="form" id="form-stay" action="#thanks">
         <div class="div-label">
@@ -45,7 +44,6 @@ Solução responsive no HTML
       </form>
 ```
 
-Adicionando img com pseudo elemento
 ```css
 @font-face {
     font-family: "Roboto";
@@ -59,7 +57,6 @@ Adicionando img com pseudo elemento
 }
 ```
 
-Adicionando e Removendo class com click.
 ```Js
 function backgroundImgSignAdd() {
     document.querySelector('.img-sign').style.background = "var(--Tomato)";
